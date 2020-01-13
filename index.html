@@ -64,58 +64,78 @@
     <section id="AboutUs">
       <h1>About Us</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+          Unlocking Eden aims to bring Heaven to Earth by equipping others to
+          step into the fullness of their identity and to experience the life
+          of abundance we're promised.
         </p>
     </section>
 
     <section class="test" >
       <h1>OurTeam</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+        <div class = "images">
+          <img id="ben" src = "./ben.JPG">
+          <p class = "bio">
+          Benjamin: "Hi! My name is Benjamin Ramer, I am from west Tennessee.
+          I love good coffee, concerts, and my dog. I one day hope to be an
+          architect to build things and incorporate ministry in my passion for
+          design! I enjoy finding ways to interweave God’s plan with businesses
+          and life which is why I am at Global U now."</p>
+
+          <img class="rotateimg180" id="kareena" src = "./kareena.JPG">
+          <p class = "bio">
+          Kareena: "I am 18 years old and from North Carolina. I have a heart
+          to carry the light and hope of Christ into situations that aren’t
+          initially seen as beautiful. And I have a deep desire to bring His
+          eyes of perspective into everything I do."</p>
+
+          <img id="stephen" src = "./stephen.JPG">
+          <p class = "bio">
+          Stephen: "I am 18 and I am from Oklahoma City, Oklahoma. I like to
+          draw out possible inventions and develop ideas for businesses in my
+          spare time. My favorite thing about God is that he always accepts me
+          back after I have run away, no matter the reason. Lastly, my favorite
+          verse is Psalms 23 saying "Though I walk through the valley of the
+          shadow of death I will fear no evil for your rod and your staff they
+          comfort me."</p>
+        </div>
     </section>
 
     <section id="H4H">
       <h1>Homes for Haiti</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+          Homes for Haiti follows Christ’s calling to heal the afflicted and
+          care for the poor by turning trash into housing, offering employment
+          which grows self worth, and transforming whole villages from a few
+          hospitable homes, which allows people to become their full selves
+          by living into who God has called them to be. By this act of love,
+          the people live in a rich relationship with the father and thriving
+          communities are created.
         </p>
     </section>
 
     <section class="test">
       <h1>Contact</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+      <div class="contact">
+        <form action="contact">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email..">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+        </div>
     </section>
+
   </main>
   <script src="./index.js" charset="utf-8"></script>
 </body>
