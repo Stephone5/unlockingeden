@@ -12,9 +12,6 @@ body{
   flex-direction: row;
   justify-content: space-evenly;
   background-color: #4f091d;
-  overflow: hidden;
-  position: fixed;
-  z-index: 10;
 }
 
 /* Style the links inside the navigation bar */
