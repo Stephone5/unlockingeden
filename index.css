@@ -10,18 +10,24 @@ body{
 .topnav {
   display: flex;
   flex-direction: row;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  width: 100%;
   justify-content: space-evenly;
-  background-color: #4f091d;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f0e9d8;
+  background-color: #4f091d;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  -webkit-border-radius: 2em;
+  border: gray solid 1.5px;
 }
 
 /*on hover color change*/
@@ -35,106 +41,41 @@ body{
   background-color: #97bfb4;
   color: #4f091d;
 }
-
                     /*end of navbar*/
 
                     /*start of UE slide*/
-
-
-
-/* Slideshow container */
-.slideshow-container {
+#UEsection {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  background-color: black;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #97bfb4;
+  height: 100%;
+  border-bottom: black solid 3px;
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  width: 100%;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  height: 5em;
-  width: 5em;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5em;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #97bfb4;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: relative;
-  bottom: 12px;
-  width: 100%;
+.UEtitle {
+  order: 1;
+  font-size: 9vw;
   text-align: center;
-  padding-top: 15px;
+  color: #4f091d;
+  margin: 0;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.UEdesc {
+  order: 2;
+  font-size: 2vw;
+  color: #4f091d;
+  text-align: center;
+}
+.usimg {
+  order: 3;
+  align-self: center;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.us-img {
+  width: 30vw;
+  height: auto;
+  -webkit-border-radius: 3em;
+  border: black solid 2.5px;
 }
 
                     /*end of UE slide*/
@@ -147,14 +88,18 @@ body{
   background-color: #f0e9d8;
   color: #4f091d;
   height: 100%;
-  font-size: 4em;
+  font-size: 2vw;
   text-align: center;
   border-bottom: black solid 3px;
 }
+                    /*end of About Us slide*/
 
+                    /*Start of OurTeam slide*/
 #OurTeam{
-  background-color: #4f091d;
+  height: 100%;
+  background-color: #97bfb4;
   padding-top: 30px;
+  border-bottom: black solid 3px;
 }
 
 #our-team-title{
@@ -187,11 +132,15 @@ body{
 }
 
 .Bio{
-  font-size: 20px;
-  padding-top: 2em;
-  padding-right: 5em;
-  padding-bottom: 2em;
-  padding-left: 5em;
+  font-size: 1.5vw;
+  padding-top: 1.5vw;
+  padding-right: 1.5vw;
+  padding-bottom: 1.5vw;
+  padding-left: 1.5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  -webkit-border-radius: 2em;
+  border: gray solid 1.5px;
 }
 
         /*End of Our team slide and images--------*/
@@ -223,8 +172,20 @@ body{
   height: 100%;
   font-size: 100%;
   text-align: center;
-
   border-bottom: black solid 3px;
+}
+
+#contactinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: .9;
+  background-color: #f0e9d8;
+  color: #97bfb4;
+  width: 60%;
+  height: auto;
+  font-size: 3vw;
+  text-align: center;
 }
                     /*end of Contact slide*/
 
